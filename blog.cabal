@@ -7,5 +7,9 @@ executable site
   main-is:          site.hs
   build-depends:    base == 4.*
                   , hakyll == 4.13.*
+                  , pandoc == 2.7.*
+                  , latex-formulae-hakyll == 0.2.*
+                  , latex-formulae-image == 0.1.*
+                  , latex-formulae-pandoc == 0.2.*
   ghc-options:      -threaded
   default-language: Haskell2010
