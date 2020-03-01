@@ -51,6 +51,11 @@ article .header {
   text-decoration: none;
 }
 
+.display-math {
+  display: block;
+  margin: 0 auto !important;
+}
+
 @media (max-width: 319px) {
   body {
     width: 90%;

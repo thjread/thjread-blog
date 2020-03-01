@@ -1,0 +1,43 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: fpco/stack-build:lts
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Cached Dependencies
+          keys:
+            - cci-haskell-v1-{{ checksum "blog.cabal" }}-{{ checksum "stack.yaml" }}
+            - cci-haskell-v1-{{ checksum "blog.cabal" }}
+            - cci-haskell-v1-
+      - run:
+          name: Resolve Dependencies
+          command: stack --no-terminal setup
+      - run:
+          name: Build Dependencies
+          command: stack --no-terminal build -j1 --fast --dependencies-only
+      - save_cache:
+          name: Cache Dependencies
+          key: cci-haskell-v1-{{ checksum "blog.cabal" }}-{{ checksum "stack.yaml" }}
+          paths:
+            - "/root/.stack"
+            - ".stack-work"
+      - run:
+          name: Build
+          command: stack --no-terminal build
+      - run:
+          name: Generate Site
+          command: stack --no-terminal exec site build
+      - run:
+          name: Publish Site
+          working_directory: './_site'
+          command: |
+            git init
+            git config user.name 'CircleCI'
+            git config user.email 'job@circleci.com'
+            git add .
+            git commit -m "Update (`date '+%F %T %Z'`) [ci_skip]"
+            git remote add origin "git@github.com:thjread/thjread.github.io.git"
+            git push --force origin master

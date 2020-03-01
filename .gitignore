@@ -1,6 +1,6 @@
 TAGS
-_cache/
 _site/
+_cache/
 dist
 dist-*
 cabal-dev
