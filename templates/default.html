@@ -18,21 +18,29 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <a href="/">thjread</a>
+        <header class="logo">
+            <img src="/images/capybara.png" style="width: 15rem;"/>
+        </header>
+        <header class="blog-title">
+            <div class="blog-title-container">
+                <a href="/">Thomas Read's blog</a>
             </div>
-            <nav>
+        </header>
+
+        <nav>
+            <div class="sidebar-container" >
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/contact.html">Contact</a>
                 <a href="/archive.html">Archive</a>
-            </nav>
-        </header>
+            </div>
+        </nav>
 
         <main role="main">
-            <h1>$title$</h1>
-            $body$
+            <div class="main-container">
+                <h1>$title$</h1>
+                $body$
+            </div>
         </main>
 
         <footer>
