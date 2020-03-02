@@ -1,6 +1,11 @@
 ---
 title: The algebraic approach to tangent spaces of varieties
 ---
+
+We define the tangent space of an irreducibile affine variety in a very geometric way -- ...
+
+# Proof
+
 Let $V = \mathbb{V}(I)$ an irreducible affine variety, and let $p \in V$. Let $\mathcal{O}_{V, p}$ be the local ring at $p$, with maximal ideal $m_p$. Then we claim that there is a natural isomorphism of vector spaces
 
 \[T_{V, p} \cong (m_p / m_p^2) \text{.}\]
