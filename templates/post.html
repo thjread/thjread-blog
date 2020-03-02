@@ -1,11 +1,14 @@
 <article>
     <section class="article-title">
-        Posted on $date$
-        $if(author)$
-            by $author$
-        $endif$
+        <h1>$title$</h1>
+        <div class="byline" >
+            Posted $date$
+            $if(author)$
+                by $author$
+            $endif$
+        </div>
     </section>
-    <section>
+    <section class="article-body">
         $body$
     </section>
 </article>

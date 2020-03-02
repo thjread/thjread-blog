@@ -56,10 +56,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  color: #000;
   display: grid;
-  grid-template-columns: [left] 20rem [content] auto [right];
+  grid-template-columns: [left] 16rem [content] auto [right];
   grid-template-rows: [top] 12rem [content-top] auto [content-bottom] 8rem [bottom];
   width: 920px; /* TODO */
   margin: auto;
@@ -69,8 +67,11 @@ header.logo {
   border-bottom: 0.2rem solid #000;
   grid-column: left / content;
   grid-row: top / content-top;
-  justify-self: end;
   align-self: end;
+}
+
+.logo-container {
+  float: right;
 }
 
 header.blog-title {
@@ -82,17 +83,17 @@ header.blog-title {
 
 .blog-title-container {
   margin-bottom: 2rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 main {
-    grid-column: content / right;
-    grid-row: content-top / content-bottom;
+  grid-column: content / right;
+  grid-row: content-top / content-bottom;
 }
 
 .main-container {
-    margin-top: 3rem;
-    margin-left: 2rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
 }
 
 nav {
@@ -102,7 +103,7 @@ nav {
 }
 
 .sidebar-container {
-  margin-right: 2rem;
+  margin-right: 3rem;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -122,37 +123,72 @@ footer {
   margin-top: 3rem;
   padding: 1.2rem 0;
   border-top: 0.2rem solid #000;
-  font-size: 1.2rem;
-  color: #555;
-  text-align: center;
+  text-align: right;
   grid-column: left / right;
   grid-row: content-bottom / bottom;
 }
 
 /* Styling */
 
+body {
+  font-size: 1.7rem;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
+  color: #000;
+}
+
 .blog-title a {
-    font-size: 3rem;
-    color: #000;
-    text-decoration: none;
+  font-size: 3rem;
+  color: #000;
+  text-decoration: none;
 }
 
 h1 {
   font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0;
   margin-bottom: 1rem;
+}
+
+.byline {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #444;
 }
 
 .article-title {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: #555;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-title h1 {
+  margin-bottom: 0.1rem;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.article-body p {
+  font-size: 1.5rem;
+  font-family: 'Lora', serif;
+}
+
+footer {
+  font-size: 1.3rem;
+  color: #444;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+ul {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* @media (max-width: 319px) {
