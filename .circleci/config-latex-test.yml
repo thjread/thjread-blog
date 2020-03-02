@@ -26,10 +26,21 @@ jobs:
             - ".stack-work"
       - run:
           name: Build
-          command: stack --no-terminal build
+          command: stack --no-terminal build --copy-bins
+      - persist_to_workspace:
+          root: '/root/.local/bin'
+          paths: "site"
+
+  generate:
+    docker:
+      - image: blang/latex:ubuntu
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/
       - run:
           name: Generate Site
-          command: stack --no-terminal exec site build
+          command: /tmp/site build
       - persist_to_workspace:
           root: '/root/project/'
           paths: "_site/"
@@ -59,9 +70,12 @@ workflows:
   build_and_publish:
     jobs:
       - build
-      - publish:
+      - generate:
           requires:
             - build
+      - publish:
+          requires:
+            - generate
           filters:
             branches:
               only: master

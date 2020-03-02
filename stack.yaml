@@ -5,7 +5,3 @@ extra-deps:
   - hakyll-4.13.0.1
   - warp-3.2.28@sha256:b32fb8fed7ace4bd206fd897c388c00cdb915ec7e34ee61dc6397d518d9e651c,11186
   - http2-1.6.5@sha256:f1743ba4a267f525106c218894e4bd2acf28fa047a9ba660b4a317a97382a877,13999
-  - latex-formulae-hakyll-0.2.0.4
-  - latex-formulae-image-0.1.1.4@sha256:2df1a5ac8884ba9d82f42b85d378aade0ee5b25e4808a80b6c4551d5b36f2554,2426
-  - latex-formulae-pandoc-0.2.0.6@sha256:877ff7e2540fdd85aeaaaa2ac1002c775f1dd0a3880e01207683447793f88fa4,2051
-

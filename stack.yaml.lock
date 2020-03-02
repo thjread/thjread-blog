@@ -25,27 +25,6 @@ packages:
       sha256: 7c5c74e748187ae08baafab4af661147dcc128f1464305de68a06c3f0949cb91
   original:
     hackage: http2-1.6.5@sha256:f1743ba4a267f525106c218894e4bd2acf28fa047a9ba660b4a317a97382a877,13999
-- completed:
-    hackage: latex-formulae-hakyll-0.2.0.4@sha256:3c6b55a68c4d6c17389777919047af148e8234f42db325c6fb5f032b1011a020,1584
-    pantry-tree:
-      size: 233
-      sha256: d3e5173813b3d3c02b7e7355a8e2ffad47b3517c45f1b612133de065f6f967f8
-  original:
-    hackage: latex-formulae-hakyll-0.2.0.4
-- completed:
-    hackage: latex-formulae-image-0.1.1.4@sha256:2df1a5ac8884ba9d82f42b85d378aade0ee5b25e4808a80b6c4551d5b36f2554,2426
-    pantry-tree:
-      size: 230
-      sha256: 9d58a47832eedb3cacc0b047bcbcc014b6c2059eb71e23f5f5fca1c8c85e0357
-  original:
-    hackage: latex-formulae-image-0.1.1.4@sha256:2df1a5ac8884ba9d82f42b85d378aade0ee5b25e4808a80b6c4551d5b36f2554,2426
-- completed:
-    hackage: latex-formulae-pandoc-0.2.0.6@sha256:877ff7e2540fdd85aeaaaa2ac1002c775f1dd0a3880e01207683447793f88fa4,2051
-    pantry-tree:
-      size: 293
-      sha256: 50f2365b3886728cc8c1c1e9bb1c8674de4051062cc6069acc59d02fb8fb5721
-  original:
-    hackage: latex-formulae-pandoc-0.2.0.6@sha256:877ff7e2540fdd85aeaaaa2ac1002c775f1dd0a3880e01207683447793f88fa4,2051
 snapshots:
 - completed:
     size: 524996
