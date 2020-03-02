@@ -40,10 +40,10 @@ jobs:
     steps:
       - checkout # Get CircleCI to populate SSH keys so that we trust GitHub
       - attach_workspace:
-          at: /tmp/site
+          at: /tmp/
       - run:
           name: Publish Site
-          working_directory: /tmp/site
+          working_directory: /tmp/_site
           command: |
             git init
             git config user.name 'CircleCI'
