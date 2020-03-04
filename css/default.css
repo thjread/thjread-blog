@@ -105,6 +105,7 @@ nav {
   text-align: right;
   grid-column: left / content;
   grid-row: content-top / content-bottom;
+  margin-bottom: 2rem;
 }
 
 .sidebar-container {
@@ -145,6 +146,10 @@ body {
   font-kerning: normal;
   font-feature-settings: "kern";
   color: #000;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav a {
