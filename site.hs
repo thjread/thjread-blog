@@ -48,9 +48,9 @@ main = hakyll $ do
     match "index.html" $ do
         route idRoute
         compile $ do
-            blogPosts <- recentFirst =<< loadAll "posts/blog/*"
+            posts <- recentFirst =<< loadAll "posts/**"
             let indexCtx =
-                    listField "posts" postCtx (return blogPosts) `mappend`
+                    listField "posts" postCtx (return posts) `mappend`
                     defaultContext
 
             getResourceBody
