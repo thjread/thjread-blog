@@ -58,16 +58,18 @@ html {
 body {
   display: grid;
   grid-template-columns: [left] 16rem [content] auto [right];
-  grid-template-rows: [top] 12rem [content-top] auto [content-bottom] 8rem [bottom];
-  max-width: 80rem; /* TODO */
+  grid-template-rows: [top] auto [content-top] auto [content-bottom] auto [bottom];
+  max-width: 75rem;
   margin: auto;
 }
 
 header.logo {
-  border-bottom: 0.2rem solid #000;
+  border-bottom: 1px solid #888;
   grid-column: left / content;
   grid-row: top / content-top;
   align-self: end;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .logo-container {
@@ -77,7 +79,7 @@ header.logo {
 }
 
 header.blog-title {
-  border-bottom: 0.2rem solid #000;
+  border-bottom: 1px solid #888;
   grid-column: content / right;
   grid-row: top / content-top;
   align-self: end;
@@ -94,8 +96,9 @@ main {
 }
 
 .main-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 nav {
@@ -106,25 +109,20 @@ nav {
 
 .sidebar-container {
   margin-right: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 nav a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
   margin-bottom: 0.75rem;
   margin-top: 0.75rem;
 }
 
 footer {
-  margin-top: 3rem;
-  padding: 1.2rem 0;
-  border-top: 0.2rem solid #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #888;
   text-align: right;
   grid-column: left / right;
   grid-row: content-bottom / bottom;
@@ -132,12 +130,28 @@ footer {
 
 /* Styling */
 
+/*
+Medieval orange: #e06f45
+Medieval blue: #356f43
+Rubrication red: #b84f62
+*/
+
 body {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-family: 'Dosis', sans-serif;
   letter-spacing: 0.02rem;
-  line-height: 1.5;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-feature-settings: "kern";
   color: #000;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: #e06f45;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .blog-title a {
@@ -172,6 +186,7 @@ h2 {
   font-weight: 500;
   margin-top: 0.9rem;
   margin-bottom: 0.4rem;
+  color: #b84f62;
 }
 
 .article-body p {
@@ -197,7 +212,7 @@ ul {
   body {
     width: 90vw;
     grid-template-columns: [left] 16rem [logo-right] auto [right];
-    grid-template-rows: [top] 12rem [nav-top] 6rem [content-top] auto [content-bottom] 8rem [bottom];
+    grid-template-rows: [top] auto [nav-top] auto [content-top] auto [content-bottom] auto [bottom];
   }
 
   header.logo {
@@ -221,8 +236,8 @@ ul {
     margin-top: 0;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 0.2rem solid #000;
+    margin-bottom: 0rem;
+    border-bottom: 1px solid #888;
   }
 
   nav a {
@@ -245,13 +260,14 @@ ul {
   body {
     width: 95vw;
     grid-template-columns: [left] auto [right];
-    grid-template-rows: [top] 11rem [logo-bottom] 6rem [nav-top] 6rem [content-top] auto [content-bottom] 8rem [bottom];
+    grid-template-rows: [top] auto [logo-bottom] auto [nav-top] auto [content-top] auto [content-bottom] auto [bottom];
   }
 
   header.logo {
     grid-column: left / right;
     grid-row: top / logo-bottom;
     border-bottom: none;
+    padding-bottom: 0;
   }
 
   .logo-container {
@@ -264,7 +280,7 @@ ul {
   }
 
   .blog-title-container {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     text-align: center;
   }
