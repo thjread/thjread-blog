@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        $if(prod)$
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159901570-1"></script>
         <script>
@@ -10,6 +11,7 @@
 
          gtag('config', 'UA-159901570-1', { 'anonymize_ip': true });
         </script>
+        $endif$
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,26 +19,15 @@
         <link rel="stylesheet" href="/css/default.css" />
         <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,700&display=swap" rel="stylesheet">
+        $if(prod)$
+        $else$
         <script type="text/x-mathjax-config">
-         MathJax.Hub.Config({
-             CommonHTML: {
-                 linebreaks: { automatic: true },
-             },
-             "HTML-CSS": {
-                 linebreaks: { automatic: true },
-             },
-             SVG: {
-                 linebreaks: { automatic: true },
-             },
-             TeX: {
-                 Macros: {
-                     diffp: ["{\\frac{\\partial #1}{\\partial #2}}", 2]
-                 }
-             }
-
-         });
+         MathJax.Hub.Config(
+             $partial("templates/mathjax-options.js")$
+         );
         </script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML"></script> <!-- TODO: upgrade to v3 when automatic line breaking is added -->
+        $endif$
     </head>
     <body>
         <header class="logo">

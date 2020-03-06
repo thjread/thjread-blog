@@ -1,0 +1,11 @@
+{
+  "name": "mathjax-prerender",
+  "version": "0.0.1",
+  "scripts": {
+    "prerender": "node mathjax-prerender.js"
+  },
+  "devDependencies": {
+    "jsdom": "^16.2.0",
+    "mathjax-node-page": "^3.2.0"
+  }
+}
