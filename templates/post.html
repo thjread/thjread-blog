@@ -12,20 +12,54 @@
         $body$
     </section>
     <section class="comments" >
+        <button id="show-comments-button" onclick="showComments()" >Load comments</button>
         <div id="graphcomment"></div>
         <script type="text/javascript">
-         window.gc_params = {
-             graphcomment_id: 'blog-thjread',
+         const MIN_SHOW_LOADING_MILLIS = 300;
 
-             // if your website has a fixed header, indicate it's height in pixels
-             fixed_header_height: 0,
-         };
+         commentsButton = document.getElementById('show-comments-button');
 
-         (function() {
-             var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-             gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
-             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-         })();
+         var loadTime;
+
+         function setLoadingText() {
+             commentsButton.innerHTML = "Loading...";
+         }
+
+         function failedLoadingText() {
+             const currentTime = new Date().getTime()
+             const elapsedTime = currentTime - loadTime;
+             if (elapsedTime < MIN_SHOW_LOADING_MILLIS) {
+                 setTimeout(function() {
+                     commentsButton.innerHTML = "Failed - try again?";
+                 }, MIN_SHOW_LOADING_MILLIS - elapsedTime);
+             } else {
+                 commentsButton.innerHTML = "Failed - try again?";
+             }
+         }
+
+         function hideCommentsButton() {
+             commentsButton.parentNode.removeChild(commentsButton);
+         }
+
+         function showComments() {
+             loadTime = new Date().getTime();
+             setLoadingText()
+
+             window.gc_params = {
+                 graphcomment_id: 'blog-thjread',
+
+                 // if your website has a fixed header, indicate it's height in pixels
+                 fixed_header_height: 0,
+             };
+
+             (function() {
+                 var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+                 gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
+                 gc.onload = hideCommentsButton;
+                 gc.onerror = failedLoadingText;
+                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+             })();
+         }
         </script>
     </section>
 </article>

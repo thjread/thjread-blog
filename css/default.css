@@ -223,6 +223,26 @@ ul {
   margin: 1em 0;
 }
 
+.comments {
+  text-align: center;
+}
+
+#show-comments-button {
+  width: 60%;
+  height: 4rem;
+  margin: 2rem 0;
+  padding: 0;
+  font-family: Dosis;
+  font-size: 1.8rem;
+  color: #b84f62;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 @media (max-width: 54rem) {
   body {
     width: 90vw;
