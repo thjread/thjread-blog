@@ -33,8 +33,8 @@ main =
          route   idRoute
          compile copyFileCompiler
 
-       match (fromList ["about.markdown", "contact.markdown"]) $ do
-         route   $ setExtension "html"
+       match "pages/*" $ do
+         route   $ gsubRoute "pages/" (const "") `composeRoutes` setExtension "html"
          compile $ pandocCompiler
            >>= loadAndApplyTemplate "templates/default.html" myDefaultContext
            >>= relativizeUrls
@@ -59,6 +59,20 @@ main =
              >>= loadAndApplyTemplate "templates/archive.html" myArchiveCtx
              >>= loadAndApplyTemplate "templates/default.html" myArchiveCtx
              >>= relativizeUrls
+
+       create ["sitemap.xml"] $ do
+         route   idRoute
+         compile $ do
+           posts <- recentFirst =<< loadAll "posts/*"
+           pages <- loadAll "pages/*"
+           let allPages = (return (pages ++ posts))
+           let sitemapCtx = mconcat
+                            [ listField "pages" (constField "root" root `mappend` myPostCtx) allPages
+                            , constField "root" root
+                            , myDefaultContext
+                            ]
+           makeItem ""
+             >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
 
        match "index.html" $ do
          route idRoute
@@ -89,3 +103,6 @@ customPandocCompiler =
           writerHTMLMathMethod = MathJax ""
         }
   in pandocCompilerWith readerOptions writerOptions
+
+root :: String
+root = "https://blog.thjread.com"
