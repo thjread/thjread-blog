@@ -70,9 +70,11 @@ Consider the coordinate ring $k[X] = k[x_1, \dotsc, x_n]/I$. We have a correspon
 
 Now we're almost there --- we just need to show $\overline{M}_p / \overline{M}_p^2 \cong m_p / m_p^2$. The inclusion $\overline{M}_p \subseteq m_p$ (considering $k[X]$ and $\mathcal{O}_{X, p}$ as subrings of the function field $k(X)$) induces a map
 
-\[\varphi : \overline{M}_p / \overline{M}_p^2 \to m_p / m_p^2 \text{.}\]
+\[\varphi : \overline{M}_p / \overline{M}_p^2 \to m_p / m_p^2\]
 
-For injectivity, take $f \in M_p$ and suppose $\varphi([\bar{f}]) = 0$. Then $\frac{f}{1} \in m_p^2$, so there exists a representation $\frac{f}{1} \sim \frac{f_1 f_2}{g}$ where $f_1, f_2, g \in k[x_1, \dotsc, x_n]$ with $f_1, f_2 \in M_p$ and $g \notin M_p$. This means that $f g - f_1 f_2 \in I$. But then $\bar{f} \bar{g} = \bar{f_1} \bar{f_2}$ as elements of $k[X]$, and $\bar{g} \notin \overline{M}_p$ is invertible, so $\bar{f} = (\bar{g}^{-1} \bar{f_1})(\bar{f_2}) \in \overline{M}_p^2$. Hence $[\bar{f}] = 0 \in \overline{M}_p / \overline{M}_p^2$, so $\varphi$ is injective.
+and we claim that this is an isomorphism. This is annoyingly fiddly to show --- Hulek implies that injectivity is obvious, but it isn't to me; let me know if you see a better approach!
+
+For injectivity, take $f \in M_p$ and suppose $\varphi([\bar{f}]) = 0$. Then $\frac{f}{1} \in m_p^2$, so there exists a representation $\frac{f}{1} \sim \frac{f_1 f_2}{g}$ where $f_1, f_2, g \in k[x_1, \dotsc, x_n]$ with $f_1, f_2 \in M_p$ and $g \notin M_p$. This means that $f g - f_1 f_2 \in I$. But then $\bar{f} \bar{g} = \bar{f_1} \bar{f_2} \in \overline{M}_p^2$ as elements of $k[X]$. So it suffices to show that $\bar{g} \notin \overline{M}_p$ is invertible modulo $\overline{M}_p^2$. Consider the ideal $\overline{M}_p^2 + (\bar{g})$ -- we want to show that this is all of $k[X]$. But $\mathbb{V}(\overline{M}_p^2) = \{p\}$ and $p \notin \mathbb{V}(\bar{g})$, so $\mathbb{V}(\overline{M}_p^2 + (\bar{g})) = \emptyset$ and so by the Nullstellensatz the ideal must be the whole ring.
 
 For surjectivity, take $f/g$ a representation for an element of $m_p$ --- that is, we have $f, g \in k[x_1, \dotsc, x_n]$ with $f \in M_p$ and $g \notin M_p$, so $c = g(p) \ne 0$. Then
 
