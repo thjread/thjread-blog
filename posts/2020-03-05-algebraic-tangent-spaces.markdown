@@ -1,5 +1,6 @@
 ----
 title: The algebraic approach to tangent spaces of varieties
+modified: 2020-03-06
 ----
 
 We define the tangent space of an irreducible affine variety in a very geometric way --- it is the zero set of linearised versions of the polynomials that define the variety. We want to connect this to the algebraic structures that we've been building up, like coordinate rings and function fields. In fact it turns out that there is a very nice way to view the tangent space at a point in terms of the local ring at at that point.
