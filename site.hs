@@ -29,6 +29,10 @@ main =
          route   idRoute
          compile copyFileCompiler
 
+       match "favicon.ico" $ do
+         route   idRoute
+         compile copyFileCompiler
+
        match (fromList ["about.markdown", "contact.markdown"]) $ do
          route   $ setExtension "html"
          compile $ pandocCompiler
