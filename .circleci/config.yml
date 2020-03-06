@@ -29,9 +29,43 @@ jobs:
           command: stack --no-terminal build
       - run:
           name: Generate Site
-          command: stack --no-terminal exec site build
+          command: PROD=1 stack --no-terminal exec site build
       - persist_to_workspace:
           root: '/root/project/'
+          paths: "_site/"
+
+  prerender:
+    docker:
+      - image: circleci/node:12.16
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/
+      - run:
+          name: move-site
+          command: mv /tmp/_site _site
+      - run:
+          name: update-npm
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          keys:
+            - cci-npm-v1-{{ checksum "mathjax-prerender/package.json" }}-{{ checksum "mathjax-prerender/package-lock.json" }}
+            - cci-npm-v1-{{ checksum "mathjax-prerender/package.json" }}
+            - cci-npm-v1
+      - run:
+          name: npm-install
+          working_directory: mathjax-prerender
+          command: npm install
+      - save_cache:
+          key: cci-npm-v1-{{ checksum "mathjax-prerender/package.json" }}-{{ checksum "mathjax-prerender/package-lock.json" }}
+          paths:
+            - mathjax-prerender/node_modules
+      - run:
+          name: prerender
+          working_directory: mathjax-prerender
+          command: node mathjax-prerender.js
+      - persist_to_workspace:
+          root: '/home/circleci/project/'
           paths: "_site/"
 
   publish:
@@ -59,9 +93,12 @@ workflows:
   build_and_publish:
     jobs:
       - build
-      - publish:
+      - prerender:
           requires:
             - build
+      - publish:
+          requires:
+            - prerender
           filters:
             branches:
               only: master
