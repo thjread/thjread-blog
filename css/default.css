@@ -129,6 +129,10 @@ footer {
   grid-row: content-bottom / bottom;
 }
 
+.comments {
+  margin-top: 2rem;
+}
+
 /* Styling */
 
 /*
