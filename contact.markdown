@@ -4,4 +4,4 @@ title: Contact
 
 # Contact
 
-Email me at <thjread@gmail.com>.
+I'd love to hear from you! Email me at <thjread@gmail.com>.
