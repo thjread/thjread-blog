@@ -25,11 +25,7 @@ main =
          route   idRoute
          compile compressCssCompiler
 
-       match "CNAME" $ do
-         route   idRoute
-         compile copyFileCompiler
-
-       match "favicon.ico" $ do
+       match (fromList ["CNAME", "favicon.ico", "robots.txt"]) $ do
          route   idRoute
          compile copyFileCompiler
 

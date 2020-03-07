@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /contact.html
+
+Sitemap: https://blog.thjread.com/sitemap.xml
