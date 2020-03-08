@@ -45,6 +45,10 @@
              loadTime = new Date().getTime();
              setLoadingText()
 
+             $if(prod)$
+             gtag('event', 'show_comments');
+             $endif$
+
              window.gc_params = {
                  graphcomment_id: 'blog-thjread',
 
