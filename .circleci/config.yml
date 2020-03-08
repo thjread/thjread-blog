@@ -83,7 +83,7 @@ jobs:
             git config user.name 'CircleCI'
             git config user.email 'job@circleci.com'
             git add .
-            git commit -m "Update (`date '+%F %T %Z'`) [ci_skip]"
+            git commit -m "Update (`date '+%F %T %Z'`)"
             git remote add origin "git@github.com:thjread/thjread.github.io.git"
             git push --force origin master
 
