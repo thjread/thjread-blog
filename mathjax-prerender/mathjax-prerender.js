@@ -10,7 +10,7 @@ const MathJaxOptions = JSON.parse(fs.readFileSync("../templates/mathjax-options.
 
 var renderMathjaxForFile = (dir, fileName, callback) => {
     var fullPath = path.join(dir, fileName);
-    var html = fs.readFile(fullPath, (err, data) => {
+    var html = fs.readFile(fullPath, 'utf8', (err, data) => {
     var dom = new JSDOM(data);
     var document = dom.window.document;
     console.log("Rendering:", fileName);
@@ -29,7 +29,7 @@ var renderMathjaxForFile = (dir, fileName, callback) => {
       var HTML = "<!DOCTYPE html>\n" 
         + document.documentElement.outerHTML
                   .replace(/^(\n|\s)*/, "");
-      fs.writeFileSync(fullPath, HTML);
+      fs.writeFileSync(fullPath, HTML, 'utf8');
       callback();
     });
   });
