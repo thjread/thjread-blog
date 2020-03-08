@@ -46,7 +46,9 @@
              setLoadingText()
 
              $if(prod)$
-             gtag('event', 'show_comments');
+             if (!doNotTrack) {
+                 gtag('event', 'show_comments');
+             }
              $endif$
 
              window.gc_params = {
