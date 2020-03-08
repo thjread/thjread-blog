@@ -38,6 +38,7 @@ main =
        match "posts/**" $ do
          route $ setExtension "html"
          compile $ customPandocCompiler
+           >>= saveSnapshot "content"
            >>= loadAndApplyTemplate "templates/post.html"    myPostCtx
            >>= loadAndApplyTemplate "templates/default.html" myPostCtx
            >>= relativizeUrls
@@ -70,6 +71,14 @@ main =
            makeItem ""
              >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
 
+       create ["atom.xml"] $ do
+         route idRoute
+         compile $ do
+           let feedCtx = myPostCtx `mappend` teaserField "description" "content"
+           posts <- fmap (take 10) . recentFirst =<<
+             loadAllSnapshots "posts/*" "content"
+           renderAtom myFeedConfiguration feedCtx posts
+
        match "index.html" $ do
          route idRoute
          compile $ do
@@ -86,6 +95,10 @@ main =
        match "templates/*" $ compile templateBodyCompiler
 
 --------------------------------------------------------------------------------
+
+root :: String
+root = "https://blog.thjread.com"
+
 customPandocCompiler :: Compiler (Item String)
 customPandocCompiler =
   let defaultReaderExtensions = readerExtensions defaultHakyllReaderOptions
@@ -100,5 +113,11 @@ customPandocCompiler =
         }
   in pandocCompilerWith readerOptions writerOptions
 
-root :: String
-root = "https://blog.thjread.com"
+myFeedConfiguration :: FeedConfiguration
+myFeedConfiguration = FeedConfiguration
+    { feedTitle       = "Thomas Read's blog"
+    , feedDescription = "Personal blog - mostly maths and programming"
+    , feedAuthorName  = "Thomas Read"
+    , feedAuthorEmail = "thjread@gmail.com"
+    , feedRoot        = "https://blog.thjread.com"
+    }
