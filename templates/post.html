@@ -46,7 +46,7 @@
              setLoadingText()
 
              $if(prod)$
-             if (!doNotTrack) {
+             if (!doNotTrack && gtag) {
                  gtag('event', 'show_comments');
              }
              $endif$
