@@ -193,14 +193,22 @@ h1 {
 h2 {
   font-size: 2.4rem;
   font-weight: 500;
-  margin-top: 0.9rem;
+  margin-top: 2.2rem;
   margin-bottom: 0.4rem;
   color: #b84f62;
+}
+
+h3 {
+    font-size: 2.0rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6rem;
+    color: #b84f62;
 }
 
 .article-body p {
   font-size: 1.5rem;
   font-family: 'Lora', serif;
+  margin-bottom: 0.75rem;
 }
 
 footer {
