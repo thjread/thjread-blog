@@ -7,12 +7,12 @@ We define the tangent space of an irreducible affine variety in a very geometric
 
 For some reason in the Cambridge Part II course we only prove this for curves --- I think the general case is much more enlightening. This proof is based on Hulek's Elementary Algebraic Geometry (Theorem 3.14), although somewhat expanded.
 
+<!--more-->
+
 ## Motivation
 
 Just like how we study varieties by looking at regular and rational functions, to take an algebraic approach to the tangent space we should look at the linear functionals on it --- that is, we should look at the dual vector space, known as the cotangent space. Intuitively (imagine a smooth manifold) we think of the tangent space at a point $p$ as looking like the variety near $p$, so a linear functional on the tangent space looks like the linear part of a function defined on the variety near $p$ (and since a linear functional is zero at the origin, we require our function to vanish at $p$). Translating this into more rigorous terminology, a "function defined on the variety near $p$" should mean a rational function which is regular at $p$, i.e. an element of the local ring $\mathcal{O}_{X, p}$ at $p$. The set of such functions which vanish at $p$ is the maximal ideal $m_p \triangleleft \mathcal{O}_{X, p}$. We want to consider just the linear part of these functions, so we quotient out by the set of functions which vanish to second order at $p$, i.e. $m_p^2$. So our aim now is to show
 \[(T_{X, p})^\ast \cong m_p / m_p^2 \text{.}\]
-
-<!--more-->
 
 ## Preparation
 

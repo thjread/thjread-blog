@@ -6,6 +6,7 @@ import           Hakyll
 import           Text.Pandoc.Options
 import           System.Environment (lookupEnv)
 import           Data.Maybe (isJust)
+import           Control.Monad
 
 
 --------------------------------------------------------------------------------
@@ -71,13 +72,20 @@ main =
            makeItem ""
              >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
 
-       create ["atom.xml"] $ do
+       create ["rss.xml"] $ do
          route idRoute
          compile $ do
-           let feedCtx = myPostCtx `mappend` teaserField "description" "content"
+           let feedCtx = mconcat
+                         [ teaserField "teaser" "content"
+                         , bodyField "description"
+                         , constField "root" root
+                         , myPostCtx
+                         ]
            posts <- fmap (take 10) . recentFirst =<<
              loadAllSnapshots "posts/*" "content"
-           renderAtom myFeedConfiguration feedCtx posts
+           processedPosts <- forM posts $
+             loadAndApplyTemplate "templates/rss-description.html" feedCtx
+           renderRss myFeedConfiguration feedCtx processedPosts
 
        match "index.html" $ do
          route idRoute
@@ -119,5 +127,5 @@ myFeedConfiguration = FeedConfiguration
     , feedDescription = "Personal blog - mostly maths and programming"
     , feedAuthorName  = "Thomas Read"
     , feedAuthorEmail = "thjread@gmail.com"
-    , feedRoot        = "https://blog.thjread.com"
+    , feedRoot        = root
     }
