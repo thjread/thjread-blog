@@ -125,7 +125,7 @@ customPandocCompiler =
 myFeedConfiguration :: FeedConfiguration
 myFeedConfiguration = FeedConfiguration
     { feedTitle       = "Thomas Read's blog"
-    , feedDescription = "Personal blog - mostly maths and programming"
+    , feedDescription = "My personal blog - mostly maths and programming"
     , feedAuthorName  = "Thomas Read"
     , feedAuthorEmail = "thjread@gmail.com"
     , feedRoot        = root

@@ -1,9 +1,11 @@
 ----
 title: The algebraic approach to tangent spaces of varieties
 modified: 2020-03-06
+meta_description: We define the Zariski tangent space of a variety in a geometric way, but we would like to connect this to our algebraic perspective. It turns out we can describe the tangent space just using the local ring at that point.
+
 ----
 
-We define the tangent space of an irreducible affine variety in a very geometric way --- it is the zero set of linearised versions of the polynomials that define the variety. We want to connect this to the algebraic structures that we've been building up, like coordinate rings and function fields. In fact it turns out that there is a very nice way to view the tangent space at a point in terms of the local ring at at that point.
+We define the (Zariski) tangent space of an irreducible affine variety in a very geometric way --- it is the zero set of linearised versions of the polynomials that define the variety. We want to connect this to the algebraic structures that we've been building up, like coordinate rings and function fields. In fact it turns out that there is a very nice way to view the tangent space at a point in terms of the local ring at at that point.
 
 For some reason in the Cambridge Part II course we only prove this for curves --- I think the general case is much more enlightening. This proof is based on Hulek's Elementary Algebraic Geometry (Theorem 3.14), although somewhat expanded.
 
