@@ -13,8 +13,10 @@ import           Control.Monad
 main :: IO ()
 main =
   do prod <- isJust <$> lookupEnv "PROD"
-     let myDefaultContext =
-           boolField "prod" (const prod) `mappend` defaultContext
+     let myDefaultContext = mconcat
+                            [ boolField "prod" (const prod)
+                            , constField "root" root
+                            , defaultContext ]
      let myPostCtx = dateField "date" "%B %e, %Y" `mappend`
            myDefaultContext
      hakyll $ do
@@ -65,8 +67,7 @@ main =
            pages <- loadAll "pages/*"
            let allPages = (return (pages ++ posts))
            let sitemapCtx = mconcat
-                            [ listField "pages" (constField "root" root `mappend` myPostCtx) allPages
-                            , constField "root" root
+                            [ listField "pages" myPostCtx allPages
                             , myDefaultContext
                             ]
            makeItem ""
@@ -78,7 +79,6 @@ main =
            let feedCtx = mconcat
                          [ teaserField "teaser" "content"
                          , bodyField "description"
-                         , constField "root" root
                          , myPostCtx
                          ]
            posts <- fmap (take 10) . recentFirst =<<
@@ -91,9 +91,10 @@ main =
          route idRoute
          compile $ do
            posts <- recentFirst =<< loadAll "posts/**"
-           let myIndexCtx =
-                 listField "posts" myPostCtx (return posts) `mappend`
-                 myDefaultContext
+           let myIndexCtx = mconcat
+                            [ listField "posts" myPostCtx (return posts)
+                            , constField "canonical" (root ++ "/")
+                            , myDefaultContext ]
 
            getResourceBody
              >>= applyAsTemplate myIndexCtx
