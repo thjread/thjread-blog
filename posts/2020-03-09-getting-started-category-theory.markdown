@@ -1,6 +1,7 @@
 ----
 title: Getting started with category theory
-modified: 2020-03-08
+modified: 2020-03-09
+meta_description: How should you learn category theory? This is a reading list of resources, based on my experience learning category theory over the past six months.
 ----
 
 So you want to learn category theory - where should you start? I've spent the past six months trying to get a background in the essentials, and so it's a good time to write up a reading list to point others along the same path. This is more of a record of my journey than an exhaustive guide, although I'll try to mention all the popular resources I know of.
@@ -11,7 +12,7 @@ So you want to learn category theory - where should you start? I've spent the pa
 
 If you're like me, you'll want to get excited about the subject before wading through a couple hundred pages of textbook. This paper is perfect for that --- it describes how category theory draws strong analogies between different areas of physics, maths and computer science, all assuming no prerequisites.
 
-Available [from John Baez's website](http://math.ucr.edu/home/baez/rosetta/rose3.pdf).
+Available from John Baez's website [here](http://math.ucr.edu/home/baez/rosetta/rose3.pdf).
 
 ### Category Theory for Programmers --- Bartosz Milewski 
 
@@ -57,7 +58,7 @@ The book seems to be fairly expensive. Or if you google it you may or may not co
 
 I've only read the first couple chapters but enjoyed them. Introductory, but with a very different syllabus from the other textbooks, focusing on the aspects used most in applied category theory such as enriched categories and monoidal categories. Each chapter develops a topic in the context of a concrete example.
 
-Free online [here](https://math.mit.edu/~dspivak/teaching/sp18/7Sketches.pdf), or a not overly expensive paperback.
+Free online [here](https://math.mit.edu/~dspivak/teaching/sp18/7Sketches.pdf), or you can buy a paperback copy.
 
 
 ## Next steps
@@ -66,16 +67,31 @@ Now that you know the basics, where should you go next? Of course this will depe
 
 ### Coend calculus --- Fosco Loregian
 
-don't worry about dinatural transformations
-typos
-last chapter of CTiC
+Coend calculus is a very useful calculational tool, and eventually you'll run into enough ends and coends that you'll need to learn how they work. The first two chapters of this book cover all the key properties, and each chapter comes with an exhaustive set of exercises. If you read Category Theory in Context, then learning about (co)ends will make the end of the chapter on Kan extensions make much more sense --- many of the ad-hoc (co)limit formulae and proofs becomes motivated and easy.
+
+Don't worry too much about the section on dinatural transformations. All the guides on (co)ends that I've read include this, but as long as you understand the definition of a (co)wedge then that's all you need to know.
+
+Available from the arXiv [here](https://arxiv.org/abs/1501.02503).
 
 ### 2-Dimensional Categories --- Niles Johnson and Donald Yau
 
+I've only just started reading this, but it got a fair amount of publicity when it was published recently. My understanding is that the book collects together a variety of material that was previously mostly scattered across various papers without many accessible introductions. In particular they include precise statements and detailed proofs of many results which are left to the reader elsewhere.
+
+Available from the arXiv [here](https://arxiv.org/abs/2002.06055)
+
 ### Sheaves in Geometry and Logic: A First Introduction to Topos Theory --- Saunders Mac Lane and Ieke Moerdijk
+
+Another book that I've only recently started, but one which several people have recommended to me. 
+
+Note that the chapters on sheaves in the context of geometry are largely independent from those on elementary topoi and logic, so don't feel like you need to read the whole thing in order.
+
+Quite expensive to buy --- again there seem to be a few pdfs floating around on the web.
 
 ### The $n$Lab
 
+No list of category theory resources would be complete without mentioning the $n$Lab --- a vast wiki with content varying from pure category theory, to categorical perspectives on other areas of maths, to random unrelated bits of maths. Invaluable, and usually the first stop for tracking down an unknown concept or definition.
+
+See [https://ncatlab.org](https://ncatlab.org).
 
 &nbsp;
 
