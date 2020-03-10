@@ -16,13 +16,13 @@ Available from John Baez's website [here](http://math.ucr.edu/home/baez/rosetta/
 
 ### Category Theory for Programmers --- Bartosz Milewski 
 
-The first part of this is one of the best gentle introductions to category theory that I know of. He tries to avoid too much mathematical notation and technical details, and instead gives intuition with beautiful drawings and keeps things grounded with snippets of Haskell code. If you have a formal training in mathematics you might prefer the next item on the list; on the other hand if you want to learn category theory in order to understand Haskell then this might be the only thing you need to read.
+The first part of this is one of the best gentle introductions to category theory that I know of. He tries to avoid too much mathematical notation and technical detail, and instead gives intuition with beautiful drawings and keeps things grounded with snippets of Haskell code. If you have a formal training in mathematics you might prefer the next item on the list; on the other hand if you want to learn category theory in order to understand Haskell then this might be the only thing you need to read.
 
 Can be read online [here](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) --- that page also links to a pdf version, a hardcover book and a series of YouTube videos.
 
 ### Category Theory in Context --- Emily Riehl
 
-This was my choice of introductory category theory textbook. It's accessible without needing to know an excessive amount of abstract algebra or other maths, and the writing is clear and of a consistently high quality. The content is evidently very well thought through: every time I skipped something I would find that it became important later, and need to go back and learn it properly. It's a fairly dense book but not needlessly so --- all the key intuition and examples are there.
+This was my choice of introductory category theory textbook. It's accessible to a later year maths undergrad without needing to know an excessive amount of abstract algebra or other prerequisites, and the writing is clear and of a consistently high quality. The content is evidently very well thought through: every time I skipped something I would find that it became important later, and need to go back and learn it properly! It's a fairly dense book but not needlessly so --- all the key intuition and examples are there.
 
 Free online [here](http://www.math.jhu.edu/~eriehl/context.pdf), and the paperback version is inexpensive.
 
@@ -44,7 +44,7 @@ Free online [here](https://arxiv.org/pdf/1612.09375.pdf); there's also a somewha
 
 #### Category Theory --- Steve Awodey
 
-Another similar book, especially aimed at those with less of a maths background, who e.g. might not know what a group is.
+Another similar book, especially aimed at those with less of a maths background who e.g. might not know what a group is.
 
 Free online [here](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf), or a not overly expensive paperback.
 
@@ -67,9 +67,9 @@ Now that you know the basics, where should you go next? Of course this will depe
 
 ### Coend calculus --- Fosco Loregian
 
-Coend calculus is a very useful calculational tool, and eventually you'll run into enough ends and coends that you'll need to learn how they work. The first two chapters of this book cover all the key properties, and each chapter comes with an exhaustive set of exercises. If you read Category Theory in Context, then learning about (co)ends will make the end of the chapter on Kan extensions make much more sense --- many of the ad-hoc (co)limit formulae and proofs becomes motivated and easy.
+(Co)end calculus is a very useful calculational tool, and eventually you'll run into enough ends and coends that you'll need to learn how they work. In particular they make working with Kan extensions much easier --- if you read Category Theory in Context then this will make Chapter 6 make much more sense. The first two chapters of this book cover all the key properties, and each chapter comes with an exhaustive set of exercises.
 
-Don't worry too much about the section on dinatural transformations. All the guides on (co)ends that I've read include this, but as long as you understand the definition of a (co)wedge then that's all you need to know.
+A word of advice --- don't worry too much about understanding dinatural transformations. All the guides on (co)ends that I've read include a section on them, but as long as you know the definition of a (co)wedge then that's all you will need.
 
 Available from the arXiv [here](https://arxiv.org/abs/1501.02503).
 
