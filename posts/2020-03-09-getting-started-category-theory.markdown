@@ -36,7 +36,7 @@ There's an organised collection [here](http://www.simonwillerton.staff.shef.ac.u
 
 ## Honourable mentions
 
-Here are a few more books which I would recommend, although I have less personal experience with these.
+Here are a few more sources which I would recommend, although I have less personal experience with these.
 
 ### Basic Category Theory --- Tom Leinster
 
@@ -62,6 +62,11 @@ I've only read the first couple chapters but enjoyed them. Introductory, but wit
 
 Free online [here](https://math.mit.edu/~dspivak/teaching/sp18/7Sketches.pdf), or you can buy a paperback copy.
 
+### Math3ma
+
+Great blog posts on a variety of ideas from category theory. Especially good for explaining what a concept really means and how you should think about it.
+
+See [here](https://www.math3ma.com/) --- in particular posts tagged "category theory" are [here](https://www.math3ma.com/categories/category-theory).
 
 ## Next steps
 
