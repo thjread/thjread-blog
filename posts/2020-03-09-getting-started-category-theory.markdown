@@ -34,27 +34,29 @@ Short YouTube videos covering a variety of topics from basic to quite advanced. 
 
 There's an organised collection [here](http://www.simonwillerton.staff.shef.ac.uk/TheCatsters/).
 
-### Honourable mentions
+## Honourable mentions
 
-#### Basic Category Theory --- Tom Leinster
+Here are a few more books which I would recommend, although I have less personal experience with these.
+
+### Basic Category Theory --- Tom Leinster
 
 This covers a bit less than Category Theory in Context, though still most of the important basics. I haven't read it, but I suspect this is a good choice, especially if you want something a little lighter.
 
 Free online [here](https://arxiv.org/pdf/1612.09375.pdf); there's also a somewhat expensive hardback version.
 
-#### Category Theory --- Steve Awodey
+### Category Theory --- Steve Awodey
 
 Another similar book, especially aimed at those with less of a maths background who e.g. might not know what a group is.
 
 Free online [here](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf), or a not overly expensive paperback.
 
-#### Categories for the Working Mathematician --- Saunders Mac Lane
+### Categories for the Working Mathematician --- Saunders Mac Lane
 
 The original and most famous textbook. Harder than Category Theory in Context, although still fairly readable if you have sufficient mathematical background. Covers slightly more content.
 
 The book seems to be fairly expensive. Or if you google it you may or may not come across a pdf...
 
-#### Seven Sketches in Compositionality: An Invitation to Applied Category Theory --- Brendan Fong and David Spivak
+### Seven Sketches in Compositionality: An Invitation to Applied Category Theory --- Brendan Fong and David Spivak
 
 I've only read the first couple chapters but enjoyed them. Introductory, but with a very different syllabus from the other textbooks, focusing on the aspects used most in applied category theory such as enriched categories and monoidal categories. Each chapter develops a topic in the context of a concrete example.
 
