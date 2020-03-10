@@ -1,6 +1,6 @@
 ----
 title: Getting started with category theory
-modified: 2020-03-09
+modified: 2020-03-10
 meta_description: How should you learn category theory? This is a reading list of resources, based on my experience learning category theory over the past six months.
 ----
 
