@@ -10,13 +10,13 @@ So you want to learn category theory - where should you start? I've spent the pa
 
 ### Physics, Topology, Logic and Computation: A Rosetta Stone --- John Baez
 
-If you're like me, you'll want to get excited about the subject before wading through a couple hundred pages of textbook. This paper is perfect for that --- it describes how category theory draws strong analogies between different areas of physics, maths and computer science, all assuming no prerequisites.
+If you're like me, you'll want to get excited about the subject before wading through a couple hundred pages of textbook. This paper is perfect for that --- it describes how category theory draws beautiful analogies between different areas of physics, maths and computer science, all assuming no prerequisites.
 
 Available from John Baez's website [here](http://math.ucr.edu/home/baez/rosetta/rose3.pdf).
 
 ### Category Theory for Programmers --- Bartosz Milewski 
 
-The first part of this is one of the best gentle introductions to category theory that I know of. He tries to avoid too much mathematical notation and technical detail, and instead gives intuition with beautiful drawings and keeps things grounded with snippets of Haskell code. If you have a formal training in mathematics you might prefer the next item on the list; on the other hand if you want to learn category theory in order to understand Haskell then this might be the only thing you need to read.
+The first part of this is one of the best gentle introductions to category theory that I know of. He tries to avoid too much mathematical notation and technical detail, and instead gives intuition with cute drawings and keeps things grounded with snippets of Haskell code. If you have a formal training in mathematics you might prefer the next item on the list; on the other hand if you want to learn category theory in order to understand Haskell then this might be the only thing you need to read.
 
 Can be read online [here](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) --- that page also links to a pdf version, a hardcover book and a series of YouTube videos.
 
