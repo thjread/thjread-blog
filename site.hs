@@ -94,6 +94,7 @@ main =
            let myIndexCtx = mconcat
                             [ listField "posts" myPostCtx (return posts)
                             , constField "canonical" (root ++ "/")
+                            , constField "homepage" "yes"
                             , myDefaultContext ]
 
            getResourceBody

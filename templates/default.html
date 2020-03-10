@@ -35,7 +35,13 @@
         $else$
         <link rel="canonical" href="$root$$url$" />
         $endif$
-        <title>Thomas Read's blog - $title$</title>
+
+        $if(homepage)$
+        <title>Thomas Read's blog</title>
+        $else$
+        <title>$title$ - Thomas Read's blog</title>
+        $endif$
+
         $if(meta_description)$
         <meta name="description" content="$meta_description$" />
         $endif$
