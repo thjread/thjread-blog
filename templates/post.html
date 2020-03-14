@@ -19,6 +19,23 @@
 
          commentsButton = document.getElementById('show-comments-button');
 
+         $if(prod)$
+         if (!doNotTrack && gtag) {
+             function scrollBottomCallback(entries, observer) {
+                 if (entries[0].intersectionRatio <= 0) return;
+
+                 gtag('event', 'scroll_bottom', {
+                     'event_category': 'engagement'
+                 });
+
+                 observer.unobserve(commentsButton);
+             }
+
+             const observer = new IntersectionObserver(scrollBottomCallback, { threshold: '0.0' });
+             observer.observe(commentsButton);
+         }
+         $endif$
+
          var loadTime;
 
          function setLoadingText() {
@@ -47,7 +64,9 @@
 
              $if(prod)$
              if (!doNotTrack && gtag) {
-                 gtag('event', 'show_comments');
+                 gtag('event', 'show_comments', {
+                     'event_category': 'engagement'
+                 });
              }
              $endif$
 
