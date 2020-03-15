@@ -4,6 +4,27 @@
         $if(noindex)$
         <meta name="robots" content="noindex">
         $endif$
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        $if(canonical)$
+        <link rel="canonical" href="$canonical$" />
+        $else$
+        <link rel="canonical" href="$root$$url$" />
+        $endif$
+
+        $if(homepage)$
+        <title>Thomas Read's blog</title>
+        $else$
+        <title>$title$ - Thomas Read's blog</title>
+        $endif$
+
+        $if(meta_description)$
+        <meta name="description" content="$meta_description$" />
+        $endif$
+
         $if(prod)$
         <script>
          var doNotTrack = false;
@@ -33,28 +54,11 @@
          }
         </script>
         $endif$
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        $if(canonical)$
-        <link rel="canonical" href="$canonical$" />
-        $else$
-        <link rel="canonical" href="$root$$url$" />
-        $endif$
-
-        $if(homepage)$
-        <title>Thomas Read's blog</title>
-        $else$
-        <title>$title$ - Thomas Read's blog</title>
-        $endif$
-
-        $if(meta_description)$
-        <meta name="description" content="$meta_description$" />
-        $endif$
 
         <link rel="stylesheet" href="/css/default.css" />
         <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,700&display=swap" rel="stylesheet">
+
         $if(prod)$
         $else$
         <script type="text/x-mathjax-config">
