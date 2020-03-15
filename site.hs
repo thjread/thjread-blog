@@ -17,8 +17,6 @@ main =
                             [ boolField "prod" (const prod)
                             , constField "root" root
                             , defaultContext ]
-     let myPostCtx = dateField "date" "%B %e, %Y" `mappend`
-           myDefaultContext
      hakyll $ do
        match "images/*" $ do
          route   idRoute
@@ -37,6 +35,26 @@ main =
          compile $ pandocCompiler
            >>= loadAndApplyTemplate "templates/default.html" myDefaultContext
            >>= relativizeUrls
+
+       tags <- buildTags "posts/**" (fromCapture "tags/*.html")
+       let myPostCtx = mconcat
+                       [ dateField "date" "%B %e, %Y"
+                       , tagsField "tags" tags
+                       , myDefaultContext ]
+       tagsRules tags $ \tag pat -> do
+         route idRoute
+         compile $ do
+           posts <- recentFirst =<< loadAll pat
+           let myTagPageCtx = mconcat
+                 [ listField "posts" myPostCtx (return posts)
+                 , constField "title" $ "Posts tagged \"" ++ tag ++ "\""
+                 , boolField "noindex" (pure True)
+                 , myDefaultContext ]
+
+           makeItem ""
+             >>= loadAndApplyTemplate "templates/tag.html" myTagPageCtx
+             >>= loadAndApplyTemplate "templates/default.html" myTagPageCtx
+             >>= relativizeUrls
 
        match "posts/**" $ do
          route $ setExtension "html"

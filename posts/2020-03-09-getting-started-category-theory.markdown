@@ -2,6 +2,7 @@
 title: Getting started with category theory
 modified: 2020-03-10
 meta_description: How should you learn category theory? This is a reading list of resources, based on my experience learning category theory over the past six months.
+tags: category-theory
 ----
 
 So you want to learn category theory - where should you start? I've spent the past six months trying to get a background in the essentials, and so it's a good time to write up a reading list to point others along the same path. This is more of a record of my journey than an exhaustive guide, although I'll try to mention all the popular resources I know of.

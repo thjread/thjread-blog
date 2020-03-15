@@ -181,6 +181,11 @@ h1 {
   font-style: italic;
   color: #444;
 }
+.tags {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #444;
+}
 
 .article-title {
   margin-bottom: 1.5rem;
