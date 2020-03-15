@@ -68,8 +68,10 @@ main =
          route idRoute
          compile $ do
            posts <- recentFirst =<< loadAll "posts/**"
+           tagList <- renderTagList tags
            let myArchiveCtx =
                  listField "posts" myPostCtx (return posts) `mappend`
+                 constField "taglist"  tagList              `mappend`
                  constField "title" "Archives"              `mappend`
                  myDefaultContext
 
