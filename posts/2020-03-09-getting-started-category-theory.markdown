@@ -1,6 +1,6 @@
 ----
 title: Getting started with category theory
-modified: 2020-03-10
+modified: 2020-03-24
 meta_description: How should you learn category theory? This is a reading list of resources, based on my experience learning category theory over the past six months.
 tags: Category theory
 ----
@@ -9,7 +9,7 @@ So you want to learn category theory - where should you start? I've spent the pa
 
 ## Introductory resources
 
-### Physics, Topology, Logic and Computation: A Rosetta Stone --- John Baez
+### Physics, Topology, Logic and Computation: A Rosetta Stone --- John Baez and Michael Stay
 
 If you're like me, you'll want to get excited about the subject before wading through a couple hundred pages of textbook. This paper is perfect for that --- it describes how category theory draws beautiful analogies between different areas of physics, maths and computer science, all assuming no prerequisites.
 
