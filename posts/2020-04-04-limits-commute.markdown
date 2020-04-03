@@ -14,13 +14,15 @@ under appropriate conditions.
 If $C$ has all $I$-shaped limits and all $J$-shaped limits then there's an elegant proof using uniqueness of adjoints. However the theorem is true under weaker conditions. We have
 
 ::: theorem
-**Theorem** (Limits commute with limits). Let $F : I \times J \to C$ be a functor (where $I$ and $J$ are small categories). If $\lim_j F(i, j)$ exists for all $j \in J$ then we find that
+**Theorem** (Limits commute with limits)
+
+Let $F : I \times J \to C$ be a functor (where $I$ and $J$ are small categories). If $\lim_j F(i, j)$ exists for all $j \in J$ then we find that
 $\lim_i \lim_j F(i, j)$ exists iff $\lim_{(i, j)} F(i, j)$ exists, in which case they are canonically isomorphic.
-:::
 
 In particular
 \[\lim_i \lim_j F(i, j) \cong \lim_j \lim_i F(i, j)\]
 if both sides exist.
+:::
 
 Since this version of the theorem is surprisingly hard to track down, I thought it was worth writing up a statement and proof. Emily Riehl's Category Theory in Context (Theorem 3.8.1) comes close, although it is missing the existence part. The only reference I've found is as a special case of "Fubini for (co)ends" from Mac Lane's Categories for the Working Mathematician, but the proof he gives doesn't explain why the existence result holds.
 

@@ -242,15 +242,23 @@ ul {
 }
 
 .tagslist {
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .mjpage__block {
   display: block;
   text-align: center;
   margin: 1em 0;
+}
+
+.theorem {
+  border-left: 0.5rem solid #b84f62;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  background-color: #b84f6212;
+  border-radius: 1rem;
 }
 
 .comments {
