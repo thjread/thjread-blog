@@ -44,7 +44,7 @@ The proof goes via the usual trick of using Yoneda to reduce to $\text{Set}$.
 
 First let us prove the theorem in the case $C = \text{Set}$. Since $\text{Set}$ is complete, all (small) limits exist, and so if you want you're free to use the proof by uniqueness of adjoints I mentioned earlier. Here I instead give a very concrete proof using the explicit description of limits in $\text{Set}$, which I think is enlightening in a different way.
 
-Let $F : I \times J \to \text{Set}$ a functor. Then for $j \in J$ we have
+Let $F : I \times J \to \text{Set}$ a functor. Then by the formula for limits in $\text{Set}$, for $j \in J$ we have
 \[\lim_j F(i, j) = \Big\{\{x_j\} \in \prod_j F(i, j) \Big\vert F(i, g)(x_j) = x_{j'} \text{ for all $g : j \to j'$ in $J$}\Big\}\text{.}\]
 Moreover given $f : i \to i'$ in $I$ we have an induced map $\lim_j F(f, j) : \lim_j F(i, j) \to \lim_j F(i', j)$ given by $\{x_j\} \mapsto \{F(f, j)(x_j)\}$. So we find
 \begin{align*}
@@ -69,4 +69,4 @@ for any $c' \in C$. Moreover it is straightforward to check that this isomorphis
 \[\lim_i \lim_j C({-}, F(i, j)) \cong \lim_{(i, j)} C({-}, F(i, j)) \text{.}\]
 Now also $\lim_{(i, j)} F(i, j)$ exists and is isomorphic to $c \in C$ iff there exists a natural isomorphism
 \[C({-}, c) \cong \lim_{(i, j)} C({-}, F(i, j)) \text{.}\]
-So we deduce that $\lim_i \lim_j F(i, j)$ exists iff $\lim_{(i, j)} F(i, j)$ exists, in which case they are canonically isomorphic.
+So we deduce that $\lim_i \lim_j F(i, j)$ exists iff $\lim_{(i, j)} F(i, j)$ exists, in which case they are isomorphic.
