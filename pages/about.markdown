@@ -4,7 +4,7 @@ meta_description: I'm currently a third year student studying maths at Trinity C
 ---
 # About me
 
-I'm currently a third year student studying maths at Trinity College, Cambridge. My main interest is category theory, and I'm also interested in functional programming and computer proof assistants.
+I'm currently a third year student studying maths at Trinity College, Cambridge. My main interest is category theory, and I'm also interested in functional programming and interactive theorem proving.
 
 Find me on
 
