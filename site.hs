@@ -101,10 +101,12 @@ main =
                          , bodyField "description"
                          , myPostCtx
                          ]
+               absolutizeUrl u = if isExternal u then u else root ++ u
            posts <- fmap (take 10) . recentFirst =<<
              loadAllSnapshots "posts/*" "content"
            processedPosts <- forM posts $
-             loadAndApplyTemplate "templates/rss-description.html" feedCtx
+             \p -> do pp <- loadAndApplyTemplate "templates/rss-description.html" feedCtx p
+                      return $ fmap (withUrls absolutizeUrl) pp
            renderRss myFeedConfiguration feedCtx processedPosts
 
        match "index.html" $ do
