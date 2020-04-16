@@ -5,6 +5,8 @@ meta_description: How do you prove that limits commute with limits, and what are
 tags: Category theory
 ----
 
+![](/images/lim_comm_lim.png){.image-very-large .center alt=""}
+
 It is a well known fact in category theory that limits commute with limits (and dually colimits commute with colimits). That is, given a functor $F : I \times J \to C$ we have
 \[\lim_i \lim_j F(i, j) \cong \lim_j \lim_i F(i, j)\]
 under appropriate conditions.

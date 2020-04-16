@@ -263,6 +263,11 @@ ul {
   width: 40rem;
 }
 
+.image-very-large {
+    width: 100%;
+}
+
+
 .image-medium {
     width: 30rem;
 }
@@ -343,11 +348,13 @@ ul {
   }
 
   .image-large {
-      width: 32rem;
+      width: 70%;
+      min-width: 32rem;
   }
 
   .image-medium {
-      width: 25rem;
+      width: 50%;
+      min-width: 25rem;
   }
 }
 
