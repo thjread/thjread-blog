@@ -1,0 +1,24 @@
+<ul>
+    $for(posts)$
+        <li class="teaser">
+            <section class="article-title">
+                <h1><a class="post-title-link" href="$url$">$title$</a></h1>
+                <div class="byline" >
+                    Posted $date$
+                    $if(author)$
+                    by $author$
+                    $endif$
+                </div>
+                <div class="tags" >
+                    $if(tags)$
+                    Tags: $tags$
+                    $endif$
+                </div>
+            </section>
+            <section class="article-body">
+                $teaser$
+            </section>
+            <a href="$url$">Read more</a>
+        </li>
+    $endfor$
+</ul>

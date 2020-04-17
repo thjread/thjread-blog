@@ -112,9 +112,11 @@ main =
        match "index.html" $ do
          route idRoute
          compile $ do
-           posts <- recentFirst =<< loadAll "posts/**"
-           let myIndexCtx = mconcat
-                            [ listField "posts" myPostCtx (return posts)
+           posts <- fmap (take 5) . recentFirst =<< loadAllSnapshots "posts/*" "content"
+           let myTeaserPostCtx =
+                 teaserField "teaser" "content" <> myPostCtx
+               myIndexCtx = mconcat
+                            [ listField "posts" myTeaserPostCtx (return posts)
                             , constField "canonical" (root ++ "/")
                             , constField "homepage" "yes"
                             , myDefaultContext ]

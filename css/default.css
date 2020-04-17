@@ -133,6 +133,12 @@ footer {
   margin-top: 1rem;
 }
 
+.teaser {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #888;
+}
+
 /* Styling */
 
 /*
@@ -232,13 +238,13 @@ footer {
   color: #444;
 }
 
-li {
-  padding-left: 1rem;
-}
-
 ul {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.post-title-link {
+  color: #000;
 }
 
 .tagslist {
