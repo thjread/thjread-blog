@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /contact.html
-Disallow: /tags/*
 
 Sitemap: https://blog.thjread.com/sitemap.xml

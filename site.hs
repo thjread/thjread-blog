@@ -85,7 +85,7 @@ main =
          compile $ do
            posts <- recentFirst =<< loadAll "posts/*"
            pages <- loadAll "pages/*"
-           let allPages = (return (pages ++ posts))
+           let allPages = return (pages ++ posts)
            let sitemapCtx = mconcat
                             [ listField "pages" myPostCtx allPages
                             , myDefaultContext
