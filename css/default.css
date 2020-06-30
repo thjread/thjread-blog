@@ -273,6 +273,11 @@ ul {
   width: 40rem;
 }
 
+.image-pad-vertical {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .image-very-large {
     width: 100%;
 }
