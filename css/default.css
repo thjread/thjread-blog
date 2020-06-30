@@ -287,6 +287,10 @@ ul {
     width: 30rem;
 }
 
+.image-small {
+    width: 15;
+}
+
 .theorem {
   border-left: 0.5rem solid #b84f62;
   padding: 1rem;
