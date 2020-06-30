@@ -13,13 +13,13 @@ I'll follow Watson's convention and refer to *scientific perspective* when I wan
 
 Stand in front of a window, and (keeping your head still and closing one eye) use a marker to trace what you see on the window. Then the resulting 2-dimensional picture will be in correct perspective. That is, we imagine a "picture plane" (the window) floating in front of us, and project our vision onto this plane by intersecting the light rays from an object to our eyes with the plane. This is also the same perspective as that created by an idealised camera.
 
-![](/images/perspective-window.png){.image-very-large .center alt="Stick figure looking through a window at a tree"}
+![](/images/perspective-window.jpg){.image-very-large .center alt="Stick figure looking through a window at a tree"}
 
 <!--more-->
 
 The window idea shows us the precise sense in which scientific perspective is "correct" -- if you replace the window with a really good perspective painting, keep your head in exactly the same place and keep one eye closed, you won't be able to tell the difference.
 
-![](/images/perspective-painting.png){.image-very-large .center alt="Stick figure looking at a painting of a tree"}
+![](/images/perspective-painting.jpg){.image-very-large .center alt="Stick figure looking at a painting of a tree"}
 
 But we often want to show dramatic perspective without painting on a wall-sized canvas and insisting that it must be viewed from no further than a metre away! A small print or an image on a computer screen is never going to fill your field of vision. And in this scenario it's less clear whether whether scientific perspective is best.
 
