@@ -59,7 +59,7 @@ body {
   display: grid;
   grid-template-columns: [left] 16rem [content] auto [right];
   grid-template-rows: [top] auto [content-top] auto [content-bottom] auto [bottom];
-  max-width: 75rem;
+  max-width: 80rem;
   margin: auto;
 }
 
