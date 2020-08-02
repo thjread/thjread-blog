@@ -126,6 +126,7 @@ main =
              >>= loadAndApplyTemplate "templates/default.html" myIndexCtx
              >>= relativizeUrls
 
+       match "about/*" $ compile templateBodyCompiler
        match "templates/*" $ compile templateBodyCompiler
 
 --------------------------------------------------------------------------------
