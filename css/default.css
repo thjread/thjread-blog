@@ -407,8 +407,13 @@ ul {
   }
 
   .image-medium {
-    width: 50%;
+    width: 45%;
     min-width: 25rem;
+  }
+
+  .image-small {
+      width: 33%;
+      min-width: 18rem;
   }
 
   footer {
