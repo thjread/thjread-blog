@@ -169,6 +169,11 @@ body {
 
 a {
   text-decoration: none;
+  color: #b84f62;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer .fa-ul {
@@ -177,8 +182,6 @@ footer .fa-ul {
 
 nav a {
   font-size: 1.8rem;
-  color: #b84f62;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -187,11 +190,6 @@ nav a {
   color: #000;
   text-decoration: none;
 }
-
-a .fas, .fab {
-  color: #b84f62;
-}
-
 
 h1 {
   font-size: 2.8rem;
@@ -323,19 +321,15 @@ ul {
 }
 
 .definition {
-    border-left: 0.5rem solid #b84f62;
-    padding: 1rem;
-    margin: 1rem 0rem;
-    background-color: #b84f6212;
-    border-radius: 1rem;
+  border-left: 0.5rem solid #b84f62;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  background-color: #b84f6212;
+  border-radius: 1rem;
 }
 
 .comments {
   text-align: center;
-}
-
-.more-link {
-  color: #b84f62;
 }
 
 #show-comments-button {
