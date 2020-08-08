@@ -1,6 +1,6 @@
 ----
 title: What is a quasi-category?
-modified: 2020-08-04
+modified: 2020-08-08
 meta_description: Quasi-categories are one of the earliest and most important models for weak (infinity, 1)-categories. The definition of a quasi-category turns out to be less horrendously complicated than you might expect!
 tags: Category theory, Infinity categories
 ----
@@ -84,6 +84,8 @@ Checking this is a nice exercise. The rough idea is that a map $I[n] \to N\mathc
 The definition of a quasi-category is a generalisation of this idea. To get a simplicial set describing a category, we ask for every spine to extend uniquely to a simplex, since a sequence of ($1$-)morphisms in a category has a unique composite. In a weak $(\infty, 1)$-category we don't have uniquely defined composites, and we also want to handle composing arrangements of higher dimensional morphisms. 
 
 The $k$th *horn* of the standard $n$-simplex ($0 \le k \le n$), denoted $\Lambda^k[n]$, is the largest simplicial set contained in $\Delta[n]$ which does not include the face opposite the vertex $k$. Geometrically, take an $n$-simplex and remove the interior and a face. A horn of the $3$-simplex really looks like a horn, while a horn of the $2$-simplex looks like two edges joined at a vertex.
+
+![](/images/horns.jpg){.image-very-large .center alt="Horns of the 2-simplex"}
 
 We call $\Lambda^k[n]$ an *inner horn* if $0 < k < n$. For example the only inner horn of the 2-simplex is $\Lambda^1[n]$, which looks like two arrows joined head to tail. Equipped with the concept of an inner horn, we can now finally state the definition of a quasi-category.
 
