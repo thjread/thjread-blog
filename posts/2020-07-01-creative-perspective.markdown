@@ -29,7 +29,7 @@ Human vision is very different from a camera. We see very little detail away fro
 
 This is why extreme perspective can appear distorted. For example, in the below diagram of a rectangle in perspective the corner nearest to the viewer makes an acute angle, while in real life we always perceive the near corner of a rectangle to make an obtuse angle.
 
-![](/images/distorted-rectangle.png){.image-very-large .center alt="Rectangle drawn in perspective"}
+![](/images/distorted-rectangle.jpg){.image-very-large .center alt="Rectangle drawn in perspective"}
 
 If you zoom in on the diagram and put your eye quite close to the centre of the horizon line then you'll see an undistorted rectangle, with the near corner appearing obtuse from your point of view. But when viewed normally it's the angle as measured on the screen that matters, and this acute angle doesn't match your experience of rectangles in real life.
 
