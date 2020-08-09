@@ -256,10 +256,13 @@ footer {
   color: #444;
 }
 
-footer h1 {
+footer h2 {
   font-weight: normal;
   font-size: 1.8rem;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0;
 }
 
 ul {
