@@ -348,6 +348,10 @@ ul {
   cursor: pointer;
 }
 
+#show-comments-button:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 54rem) {
   body {
     width: 90vw;
