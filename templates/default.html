@@ -59,15 +59,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,700&display=swap" rel="stylesheet">
 
-        $if(prod)$
-        $else$
-        <script type="text/x-mathjax-config">
-         MathJax.Hub.Config(
-             $partial("templates/mathjax-options.js")$
-         );
+        <script>
+         window.MathJax = {
+             tex: {
+                 macros: {
+                     diffp: ["{\\frac{\\partial #1}{\\partial #2}}", 2]
+                 }
+             }
+         };
         </script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML"></script> <!-- TODO: upgrade to v3 when automatic line breaking is added -->
-        $endif$
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
         <script src="https://kit.fontawesome.com/2f54fe6e45.js" crossorigin="anonymous"></script>
     </head>
     <body>
