@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
     <url>
         <loc>$root$/</loc>
-        <changefreq>daily</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     $for(pages)$
@@ -11,7 +11,7 @@
     <url>
         <loc>$root$$url$</loc>
         $if(modified)$<lastmod>$modified$</lastmod>$endif$
-        <changefreq>weekly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     $endif$
