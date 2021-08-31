@@ -3,6 +3,7 @@ title: Slides on algebraic theories
 modified: 2021-01-01
 meta_description: This summer I did a research project supervised by Martin Hyland, on topics to do with algebraic theories. I recently gave a talk about the project, and I've uploaded the slides here.
 tags: Category theory, Universal algebra
+prerequisites: none
 ----
 
 ![](/images/comm-monoid-operad.jpg){.image-large .center alt="Composition in the commutative monoid operad"}

@@ -3,6 +3,7 @@ title: What is a quasi-category?
 modified: 2020-08-08
 meta_description: Quasi-categories are one of the earliest and most important models for weak (infinity, 1)-categories. The definition of a quasi-category turns out to be less horrendously complicated than you might expect!
 tags: Category theory, Infinity categories
+prerequisites: basic category theory (categories, functors)
 ----
 
 A category describes a collection of objects with composable morphisms between them. In a 2-category you also have 2-morphisms between morphisms with matching domain and codomain. For example there is a 2-category $\text{Cat}$ with objects given by (small) categories, 1-morphisms given by functors between categories, and 2-morphisms given by natural transformations between functors. Continuing this pattern gives the idea of an $n$-category, where you have objects, 1-morphisms, 2-morphisms, and so on up to $n$-morphisms. The ultimate such structure is an $\infty$-category, with a never ending sequence of morphisms between morphisms between ... between morphisms.

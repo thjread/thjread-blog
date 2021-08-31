@@ -198,15 +198,10 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.byline {
+.byline, .tags, .prerequisites {
   font-size: 1.5rem;
   font-style: italic;
   color: #444;
-}
-.tags {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: #444;
 }
 
 .article-title {

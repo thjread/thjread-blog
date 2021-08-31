@@ -3,6 +3,7 @@ title: Three proofs that limits commute with limits
 modified: 2020-04-16
 meta_description: How do you prove that limits commute with limits, and what are the precise conditions for this to hold? I compare three proofs - a direct proof by universal property, a standard Yoneda argument, and a distinct proof using uniqueness of adjoints.
 tags: Category theory
+prerequisites: basic category theory (limits, Yoneda, adjoints)
 ----
 
 ![](/images/lim_comm_lim.png){.image-very-large .center alt=""}
