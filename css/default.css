@@ -33,9 +33,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -242,6 +239,16 @@ em {
   margin-bottom: 0.75rem;
 }
 
+.article-body ol, .article-body ul {
+    font-size: 1.5rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 0.75rem;
+}
+
+.article-body li {
+    margin-bottom: 0.75rem;
+}
+
 strong {
   font-weight: bold;
 }
@@ -260,7 +267,7 @@ footer h2 {
   letter-spacing: 0;
 }
 
-ul {
+ol, ul {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
