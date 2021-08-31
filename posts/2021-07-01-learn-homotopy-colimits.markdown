@@ -3,6 +3,7 @@ title: How to learn about homotopy limits and colimits
 modified: 2021-08-31
 meta_description: I wanted to quickly learn the basics of homotopy limits, and found it surprisingly hard to even find a clear definition. In this post I'll give a brief explanation of what homotopy limits are, and point to the further resources that I found most helpful.
 tags: Homotopy theory, Model categories, Category theory
+prerequisites: homotopy theory (homotopy equivalence), category theory (limits, knowledge of model categories and simplicial sets would be helpful)
 ----
 
 <!---
@@ -62,7 +63,7 @@ I hope the general idea of homotopy limits makes sense so far. But when you go f
 
 ### Ambient category
 
-Homotopy theorists often work in a ``convenient category of topological spaces'' -- a subcategory of the category of all topological spaces, which has better categorical properties. A common choice is the category of compactly generated weak Hausdorff spaces (there's a nice overview in this [paper by Neil Strickland](https://neil-strickland.staff.shef.ac.uk/courses/homotopy/cgwh.pdf)), but unfortunately people often use slight variations. In practice I don't think these differences tend to matter for the theory of homotopy limits, but as someone who likes to keep track of technical details I'm not quite sure how best to deal with this situation.
+Homotopy theorists often work in a "convenient category of topological spaces" -- a subcategory of the category of all topological spaces, which has better categorical properties. A common choice is the category of compactly generated weak Hausdorff spaces (there's a nice overview in this [paper by Neil Strickland](https://neil-strickland.staff.shef.ac.uk/courses/homotopy/cgwh.pdf)), but unfortunately people often use slight variations. In practice I don't think these differences tend to matter for the theory of homotopy limits, but as someone who likes to keep track of technical details I'm not quite sure how best to deal with this situation.
 
 Another possibility is to work in a much more general setting, such as a simplicial model category. Again most of the theory is the same in this setting, but there are a few differences: some results can be slightly strengthened or simplified when you restrict to topological spaces. In particular there are some cases where in the general setting you need to work with (co)fibrant replacements, but this is unnecessary for topological spaces.
 
