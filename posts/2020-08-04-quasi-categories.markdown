@@ -1,7 +1,7 @@
 ----
 title: What is a quasi-category?
 modified: 2020-08-08
-meta_description: Quasi-categories are one of the earliest and most important models for weak (infinity, 1)-categories. The definition of a quasi-category turns out to be less horrendously complicated than you might expect!
+meta_description: Quasi-categories are one of the earliest and most important models for weak (infinity, 1)-categories. The definition of a quasi-category turns out to be less horrendously complicated than you might expect! The key is to understand simplicial sets, which are a kind of combinatorial approach to shape. Then a quasi-category is a simplicial set satisfying a condition that asks for certain "compositions of morphisms" to exist.
 tags: Category theory, Infinity categories
 prerequisites: basic category theory (categories, functors)
 ----
