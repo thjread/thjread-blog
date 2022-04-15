@@ -181,6 +181,11 @@ a:hover {
   text-decoration: underline;
 }
 
+sup {
+  vertical-align: super;
+  font-size: 80%;
+}
+
 footer .fa-ul {
   margin-left: 1.5em;
 }
