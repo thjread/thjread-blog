@@ -104,7 +104,7 @@ Kombu dashi has a slightly yellow colour, so to help identify the colour change 
 
 <!-- calculate concentration: base solution was 200mg KI in 500ml water = 400mg KI per litre. I has atomic weight 126.9, KI has atomic weight 39.1+126.9. So concentration of I is 400*126.9/(126.9+39.1) = 306mg / L so molarity is 400e-3 / (39.1+126.9) = 2.4e-3. Other samples are diluted by a factor of 10 and a factor of 100.-->
 
-![The top two rows show the iodine remaining in a piece of kombu after boiling for various lengths of time. The bottom row shows various known concentrations of iodine.](/images/kombu_experiment_1.png){.image-medium .image-pad-vertical .center alt="Results of the first experiment"}
+![The top two rows show the iodine remaining in a piece of kombu after boiling for various lengths of time. The bottom row shows various known concentrations of iodine.](/images/kombu_experiment_1.jpg){.image-medium .image-pad-vertical .center alt="Results of the first experiment"}
 
 ![Control samples from the first experiment, showing the yellow colour of the concentrated kombu extract.](/images/kombu_experiment_1_control.jpg){.image-medium .image-pad-vertical .center alt="Control samples from the first experiment"}
 
@@ -114,7 +114,7 @@ The results fit my expectations: the samples were about six times more concentra
 
 Most kombu dashi recipes suggest either cold soaking kombu or heating it at a bare simmer, never boiling hard, saying that this spoils the flavour. So I wanted to try soaking and simmering, and I also wanted to more accurately figure out how much iodine was left. This time I took two pieces of kombu -- one was simmered for 5 minutes, and the other was soaked for 30 minutes. I then soaked each piece in fresh water overnight to extract the remaining iodine, before boiling the samples until only a few drops remained -- just 1.6ml liquid per gram of kombu. I prepared three known concentration solutions of potassium iodide, around the range I was expecting the samples to be in.
 
-![The top row shows the iodine remaining in a piece of kombu after simmering for 5 minutes or cold soaking for 30 minutes. The bottom row shows various known concentrations of iodine.](/images/kombu_experiment_2.png){.image-medium .image-pad-vertical .center alt="Results of the second experiment"}
+![The top row shows the iodine remaining in a piece of kombu after simmering for 5 minutes or cold soaking for 30 minutes. The bottom row shows various known concentrations of iodine.](/images/kombu_experiment_2.jpg){.image-medium .image-pad-vertical .center alt="Results of the second experiment"}
 
 ![Control samples from the second experiment.](/images/kombu_experiment_2_control.jpg){.image-medium .image-pad-vertical .center alt="Control samples from the second experiment"}
 
