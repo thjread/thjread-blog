@@ -1,6 +1,6 @@
 ----
 title: Three proofs that limits commute with limits
-modified: 2020-04-16
+modified: 2022-05-11
 meta_description: How do you prove that limits commute with limits, and what are the precise conditions for this to hold? I compare three proofs - a direct proof by universal property, a standard Yoneda argument, and a distinct proof using uniqueness of adjoints.
 tags: Category theory
 prerequisites: basic category theory (limits, Yoneda, adjoints)
@@ -69,7 +69,7 @@ But that is the same as a family $\lambda_{i, j}$ such that for any morphism $(f
 
 Moreover it is straightforward to check that a morphism $h : c \to c'$ gives a morphism between two cones over $\lim_j F({-}, j)$ with summits $c$ and $c'$ iff it gives a morphism between the corresponding cones over $F({-}, {-})$.
 
-This establishes the isomorphism between categories of cones. Since a limit is just an initial cone, we see that $\lim_i \lim_j F(i, j)$ exists iff $\lim_{(i, j)} F(i, j)$ exists, in which case the limits are isomorphic.
+This establishes the isomorphism between categories of cones. Since a limit is just a terminal cone, we see that $\lim_i \lim_j F(i, j)$ exists iff $\lim_{(i, j)} F(i, j)$ exists, in which case the limits are isomorphic.
 
 ## General proof by Yoneda
 
