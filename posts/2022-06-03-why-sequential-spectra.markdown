@@ -35,11 +35,13 @@ An Omega-spectrum $X$ consists of a sequence $(X_n)_{n \ge 0}$ of pointed topolo
 
 Note that
 \[\pi_k (X_n) \cong \pi_k(\Omega X_{n+1}) \cong \pi_{k+1}(X_{n+1}) \text{.}\]
-For any $k \in \mathbb{Z}$, we can define the $k$th (stable) homotopy group of an Omega-spectrum $X$ to be $\pi_{n+k}(X_n)$ for any $n$ large enough that $n+k \ge 0$. When $k \ge 0$ then these agree with the homotopy groups of $X_0$, but we also have homotopy groups in negative dimensions!
+For any $k \in \mathbb{Z}$, we can define the $k$th (stable) homotopy group $\pi_k(X)$ of an Omega-spectrum $X$ to be isomorphic to $\pi_{n+k}(X_n)$ for any $n$ large enough that $n+k \ge 0$. When $k \ge 0$ then these agree with the homotopy groups of $X_0$, but we also have homotopy groups in negative dimensions!
 
-TODO mention Freudenthal suspension?
+![](/images/omega-spectrum-homotopy-groups.png){.image-large .center alt="Diagram of the homotopy groups of the spaces comprising an Omega-spectrum, and the isomorphisms between them"}
+
+<!-- TODO mention Freudenthal suspension?
 mention loops is invertible?
-- look at the things Dhruva sent?
+- look at the things Dhruva sent? -->
 
 ## Sequential spectra and the stable model structure
 
@@ -62,14 +64,22 @@ Instead we take a step back. An Omega-spectrum is a structure (a collection of s
 ::: definition
 **Definition** (Sequential spectrum)
 
-A sequential spectrum $X$ is a sequence of pointed topological spaces $X_n$, together with maps
+A sequential spectrum $X$ is a sequence of pointed topological spaces $X_n$, together with structure maps
 \[X_n \to \Omega X_{n+1}\]
 from each space to the loop space of the next.
 
 (This definition is usually given in terms of maps $\Sigma X_n \to X_{n+1}$ out of the reduced suspension, but the two perspectives are equivalent by the loops-suspension adjunction.)
 :::
 
-We can define a category $\text{SeqSpec}$ of sequential spectra, where a map $X \to Y$ of sequential spectra is a collection of continuous maps $X_n \to Y_n$ that commute with the structure maps. <!-- TODO should probably write this more explicitly in the definition, will need commuting square diagram --> This time we do get a complete and cocomplete category (limits and colimits can both be computed objectwise). Even better, it turns out there's a natural model structure on $\text{SeqSpec}$, called the strict model structure on sequential spectra[^strict_model].
+We can define a category $\text{SeqSpec}$ of sequential spectra. A map $f: X \to Y$ of sequential spectra is a collection of continuous maps $f_n : X_n \to Y_n$ that respect the structure maps, in the sense that we have commutative diagrams
+$$\require{amscd}
+\begin{CD}
+X_n @>{f_n}>> Y_n\\
+@VVV @VVV \\
+\Omega X_{n+1} @>{\Omega f_{n+1}}>> \Omega Y_{n+1} \text{.}
+\end{CD}$$
+
+This time we do get a complete and cocomplete category (limits and colimits can both be computed objectwise). Even better, it turns out there's a natural model structure on $\text{SeqSpec}$, known as the strict model structure on sequential spectra[^strict_model].
 
 [^strict_model]: Under certain conditions, there's a natural model structure on the category of functors from a small category to a model category, called the projective model structure. It turns out that $\text{SeqSpec}$ is equivalent to a category of topologically enriched functors into the category of pointed spaces -- see [this section of the nLab guide](https://ncatlab.org/nlab/show/Introduction+to+Stable+homotopy+theory+--+1-1#TopologicalDiagramsSequentialSpectra) for an explanation. The strict model structure on sequential spectra is the projective model structure on this category of functors.
 
@@ -79,7 +89,7 @@ The key is that a model category really describes the homotopy theory of the *fi
 
 [^omega-spectrification]: The theory of Bousfield localisations gives some help in doing this. The most important ingredient is to define an "Omega-spectrification" functor that takes a sequential spectrum and approximates it by an Omega-spectrum.
 
-TODO - another nice property of sequential spectra: get suspension spectrum?
+<!-- TODO - another nice property of sequential spectra: get suspension spectrum? -->
 
 ## Further study
 
