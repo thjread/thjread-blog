@@ -4,6 +4,7 @@ jobs:
   build:
     docker:
       - image: fpco/stack-build:lts-14.27
+    resource_class: large
     steps:
       - checkout
       - restore_cache:
