@@ -41,7 +41,7 @@ In our examples above, we can compute that the homotopy pullback of $\ast \hookr
 
 ## Key properties
 
-The general construction of homotopy limits and colimits is a bit complicated, so it helps to start with some important properties. The following list comes from Pascal Lambrecht's [A Gentle Introduction on Homotopy Limits and Colimits](https://mysite.science.uottawa.ca/pjacqmin/PrimerHolimHocolim-19sept2013.pdf).
+The general construction of homotopy limits and colimits is a bit complicated, so it helps to start with some important properties. The following list comes from Pascal Lambrecht's [A Gentle Introduction on Homotopy Limits and Colimits](https://web.archive.org/web/20211021115751/https://mysite.science.uottawa.ca/pjacqmin/PrimerHolimHocolim-19sept2013.pdf).
 
 Given a diagram category $I$, a homotopy limit functor $\text{holim} : \text{Top}^I \to \text{Top}$ should satisfy:
 
