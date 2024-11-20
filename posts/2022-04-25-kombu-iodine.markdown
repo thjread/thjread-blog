@@ -47,7 +47,7 @@ This suggests that you could make a "low-iodine dashi" by pre-soaking kombu to r
 
 ## Measuring iodine at home
 
-I decided to have a go at making a low-iodine dashi, which meant figuring out the minimum amount of soaking needed to remove most of the iodine. To do that, I needed a way of measuring iodine. You can send a sample to be analysed in a commercial lab but it costs several hundred pounds -- definitely out of my budget for this project, so I'd have to do it myself. I wanted to be able to detect iodine at the concentration I was expecting in dashi, about 30 mg per litre. That's a pretty small quantity, but not totally microscopic: 30 mg is about half the mass of a grain of salt.
+I decided to have a go at making a low-iodine dashi, which meant figuring out the minimum amount of soaking needed to remove most of the iodine. To do that, I needed a way of measuring iodine. You can send a sample to be analysed in a commercial lab but it costs several hundred pounds -- definitely out of my budget for this project, so I'd have to do it myself. I wanted to be able to detect iodine at the concentration I was expecting in dashi, about 30 mg per litre. That's a pretty small quantity, but not microscopic: a 30mg cube of iodine is about 2mm on each side.
 
 At school we learnt that you can detect iodine using the starch-iodine test. Pour an iodine solution onto something containing starch, like a cut piece of potato, and it'll stain the starch a deep blue-black. We usually used this as a test for starch, but it also works to test for iodine.
 
